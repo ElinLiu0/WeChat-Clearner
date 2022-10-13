@@ -1,15 +1,11 @@
 // Author: Elin.Liu
-// Date: 2022-10-03 13:26:09
+// Date: 2022-10-13 14:33:13
 // Last Modified by:   Elin.Liu
-// Last Modified time: 2022-10-03 13:26:09
+// Last Modified time: 2022-10-13 14:33:13
 
 #include <dirent.h>
 #include <string.h>
-#include <sys/stat.h>
-#include <direct.h>
 #include <io.h>
-#include <ftw.h>
-#include <windows.h>
 /*
     该函数需要userID返回来的包含用户ID的路径字符串
     并返回完整的缓存路径，类型为字符串指针

@@ -1,14 +1,11 @@
 // Author: Elin.Liu
-// Date: 2022-10-04 16:04:07
+// Date: 2022-10-13 14:33:30
 // Last Modified by:   Elin.Liu
-// Last Modified time: 2022-10-04 16:04:07
-#include <dirent.h>
+// Last Modified time: 2022-10-13 14:33:30
+
 #include <string.h>
-#include <sys/stat.h>
 #include <direct.h>
 #include <io.h>
-#include <ftw.h>
-#include <windows.h>
 /*
     该函数需要userID返回来的包含用户ID的路径字符串
     并返回存放所有消息记录的sqlite文件路径

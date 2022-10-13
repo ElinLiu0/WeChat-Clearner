@@ -1,7 +1,8 @@
 // Author: Elin.Liu
-// Date: 2022-10-07 14:27:57
+// Date: 2022-10-13 14:33:07
 // Last Modified by:   Elin.Liu
-// Last Modified time: 2022-10-07 14:27:57
+// Last Modified time: 2022-10-13 14:33:07
+
 #include <stdio.h>
 #include <stdlib.h>
 void drawHeader()
@@ -20,7 +21,7 @@ void drawHeader()
     {
         printf("***");
     }
-    printf("By : Elin Liu");
+    printf("By : 柳轶霖");
     for (int i = 0; i <= 3; i++)
     {
         printf("***");
