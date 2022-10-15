@@ -23,12 +23,13 @@ void main(int argc, char *argv[])
     switch (userChoice)
     {
     case 'y':
-        int WeChatAlive = 0;
+        int WeChatAlive;
         WeChatAlive = isWeChatAlive();
         switch (WeChatAlive)
         {
             case -1:
                 printf("无法初始化进程探测器，请重新启动程序尝试！\n");
+                break;
             case 0:
                 system("color f");
                 // 获取本地缓存的用户ID
@@ -69,9 +70,11 @@ void main(int argc, char *argv[])
                 printf("删除完毕！\n");
                 printf("共删除缓存对象 %d 个。\n", (_cache_object_count + _cache_video_object_count + _cache_File_object_count + _cache_msg_object_count + _cache_msg_db_count));
                 system("PAUSE");
+                break;
             case 1:
 				printf("检测到微信正在运行，请关闭微信后再试！\n");
 				system("PAUSE");
+                break;
         }
     case 'n':
         exit(EXIT_SUCCESS);
