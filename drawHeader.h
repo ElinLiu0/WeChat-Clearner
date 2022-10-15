@@ -11,7 +11,7 @@ void drawHeader()
     {
         printf("***");
     }
-    printf(" WeChat Cleaner ");
+    printf(" 微信清理工具 ");
     for (int i = 0; i <= 3; i++)
     {
         printf("***");
