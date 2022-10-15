@@ -30,8 +30,8 @@ int isWeChatAlive()
 		if (strcmp(processEntry.szExeFile, "WeChat.exe") == 0) {
 			// 存在则关闭句柄检查
 			CloseHandle(hProcess);
-			break;
 			return 1;
+			break;
 		}
 		bMore = Process32Next(hProcess, &processEntry);
 	}
