@@ -2,19 +2,18 @@
 // Date: 2022-10-03 12:16:28
 // Last Modified by:   Elin.Liu
 // Last Modified time: 2022-10-03 12:16:28
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "getCacheRoute.h"
-#include "removingCache.h"
-#include "getUserID.h"
-#include "getVideoRoute.h"
-#include "getFileRoute.h"
-#include "getMsgRoute.h"
-#include "getMsgDB.h"
-#include "drawHeader.h"
-#include "getWeChatProcess.h"
+#include "process/drawHeader.h"
+#include "process/removingCache.h"
+#include "api/getUserID.h"
+#include "api/getCacheRoute.h"
+#include "api/getVideoRoute.h"
+#include "api/getFileRoute.h"
+#include "api/getMsgRoute.h"
+#include "api/getMsgDB.h"
+#include "api/getWeChatProcess.h"
 void main(int argc, char *argv[])
 {
     char userChoice;
