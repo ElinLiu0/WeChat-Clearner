@@ -3,7 +3,7 @@
 // Last Modified by:   Elin.Liu
 // Last Modified time: 2022-10-13 14:33:30
 
-#include <string.h>
+#include "dirent.h"
 #include <direct.h>
 #include <io.h>
 /*

@@ -4,12 +4,11 @@
 // Last Modified time: 2022-10-03 13:26:46
 #include <stdlib.h>
 #include <stdio.h>
-#include <dirent.h>
+#include "dirent.h"
 #include <string.h>
 #include <sys/stat.h>
 #include <direct.h>
 #include <io.h>
-#include <ftw.h>
 #include <windows.h>
 /*
     释放被指定了本地userID的路径缓存，该函数仅可适用基于CMD的运行环境
@@ -82,7 +81,7 @@ int removing_cache(char *path)
                 }
                 else
                 {
-                    printf("无法删除文件: %s (响应: %d,%p)\n", ent->d_name, _file_result, _file_result);
+                    printf("无法删除文件: %s (响应: %d,%p)\n", ent->d_name, _file_result,_file_result);
                 }
             }
         }
