@@ -41,7 +41,7 @@ int removing_cache(char *path)
             else
             {
                 // 初始化int类型_dir_result，以承接来自direct.h头文件中的_rmdir函数的返回值
-                const int _dir_result = _rmdir(ent->d_name);
+                const int _dir_result = rmdir(ent->d_name);
                 if (_dir_result == 0)
                 {
                     printf("删除了空文件夹: %s (响应: %d)\n", ent->d_name, _dir_result);
