@@ -37,6 +37,7 @@ void drawHeader()
     printf("<消息缓存>");
     system("color c");
     printf("清除！\n");
+    printf("详情请参阅：https://github.com/RosterMouch/WeChat-Clearner/blob/master/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E4%BC%9A%E5%85%A8%E9%83%A8%E5%88%A0%E9%99%A4.md\n");
     printf("请确保必要文件备份后再执行程序！\n");
     for (int i = 0; i <= 10; i++)
     {
