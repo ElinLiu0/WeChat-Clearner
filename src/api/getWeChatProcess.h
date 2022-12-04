@@ -1,9 +1,9 @@
 /*
 	导入Windows.h个tlhelp32.h文件用于访问WindowsAPI和进程信息
 */
-#include<windows.h>
-#include<TlHelp32.h>			
-#include<stdio.h>				
+#include <windows.h>
+#include <TlHelp32.h>
+#include <stdio.h>
 int isWeChatAlive()
 {
 	// 初始化进程入口结构体
@@ -18,7 +18,7 @@ int isWeChatAlive()
 		return -1;
 	}
 	/*
-		使用Process32First()函数获取进程快照中的第一个进程信息
+		使用Process32First()函数获取进程列表中第一个条目是否复制到Buffer(缓冲区)
 		该函数接收两个参数，第一个参数是进程快照句柄，第二个参数是进程入口结构体的指针
 		最终返回一个布尔值信号量，用于表示Process32First()函数是否从系统句柄中读取成功读取到进程信息
 		当其确定初始化了第一个进程后，我们才可以使用Process32Next()函数获取下一个进程信息
@@ -27,7 +27,8 @@ int isWeChatAlive()
 	while (bMore)
 	{
 		// 判断进程WeChat.exe是否存在于句柄中
-		if (strcmp(processEntry.szExeFile, "WeChat.exe") == 0) {
+		if (strcmp(processEntry.szExeFile, "WeChat.exe") == 0)
+		{
 			// 存在则关闭句柄检查
 			CloseHandle(hProcess);
 			return 1;

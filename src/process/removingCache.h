@@ -7,7 +7,6 @@
 #include "dirent.h"
 #include <string.h>
 #include <sys/stat.h>
-#include <direct.h>
 #include <io.h>
 #include <windows.h>
 /*
@@ -50,8 +49,7 @@ int removing_cache(char *path)
                 }
                 else
                 {
-                    // 初始化Powershell
-                    // 初始化powershell指令
+                    // 初始化CMD指令
                     char command_begin[100] = "rmdir /S /Q ";
                     char end_path[100] = ".\\";
                     strcat(command_begin, end_path);
@@ -81,7 +79,7 @@ int removing_cache(char *path)
                 }
                 else
                 {
-                    printf("无法删除文件: %s (响应: %d,%p)\n", ent->d_name, _file_result,_file_result);
+                    printf("无法删除文件: %s (响应: %d,%p)\n", ent->d_name, _file_result, _file_result);
                 }
             }
         }
